@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <Button android:id="@+id/ButtonA"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="RED"
+        android:background="#FF0000"/>
+    <Button android:id="@+id/ButtonB"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="ORANGE"
+        android:background="#FFA500"
+        app:layout_constraintLeft_toRightOf="@id/ButtonA"
+        android:layout_margin="50dp"/>
+    <Button android:id="@+id/ButtonC"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="YELLOW"
+        android:background="#FFFF00"
+        app:layout_constraintLeft_toRightOf="@id/ButtonB"
+        android:layout_margin="50dp"/>
+    <Button android:id="@+id/ButtonD"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="BLUE"
+        android:background="#0000FF"
+        app:layout_constraintTop_toBottomOf="@id/ButtonA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_margin="30dp"/>
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="GREEN"
+        android:background="#008000"
+        app:layout_constraintRight_toLeftOf="@id/ButtonD"
+        android:layout_marginRight="10dp"
+        app:layout_constraintTop_toBottomOf="@id/ButtonA"
+        android:layout_marginTop="30dp"
+        />
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="INDIGO"
+        android:background="#4B0082"
+        app:layout_constraintLeft_toRightOf="@id/ButtonD"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintTop_toBottomOf="@id/ButtonA"
+        android:layout_marginTop="30dp"
+        />
+    <Button android:id="@+id/ButtonG"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="VIOLET"
+        android:background="#C71585"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+</android.support.constraint.ConstraintLayout>
